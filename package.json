@@ -1,0 +1,21 @@
+{
+  "name": "chtree",
+  "version": "1.0.0",
+  "description": "Walks through a directory and prints out a treeview of its content",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tree",
+    "file",
+    "path",
+    "walk"
+  ],
+  "author": "chtefi",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.0.3",
+    "minimist": "^1.1.0"
+  }
+}
