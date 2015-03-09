@@ -1,6 +1,6 @@
 {
   "name": "chtree",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Walks through a directory and prints out a treeview of its content",
   "main": "index.js",
   "scripts": {
@@ -24,7 +24,7 @@
     "url": "https://github.com/chtefi/chtree.git"
   },
   "bin": {
-    "chtree": "bin/chtree"
+    "chtree": "bin/chtree.js"
   },
   "bugs": {
     "url": "https://github.com/chtefi/chtree/issues"

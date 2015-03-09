@@ -4,7 +4,7 @@ Walks through a directory and prints out a treeview of its content.
 It doesn't use walk-fs or other walking modules because in order to have a 'clean' code I needed callbacks those libs did not provide (exit a folder).
 
 # How to
-    $ npm install
+    $ npm install -g chtree
 
     $ node index.js
     - node_modules
@@ -33,7 +33,7 @@ It doesn't use walk-fs or other walking modules because in order to have a 'clea
           · styles.js
 
 # Help
-`node index.js --help`
+    chtree --help
 
 # Todo
 - Add tests.
