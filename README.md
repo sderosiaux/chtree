@@ -36,5 +36,4 @@ It doesn't use walk-fs or other walking modules because in order to have a 'clea
 `node index.js --help`
 
 # Todo
-- Be able to install it with `npm -g`.
 - Add tests.
