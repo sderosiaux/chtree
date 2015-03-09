@@ -50,20 +50,24 @@ function isIgnored(name) {
 }
 
 // returns the name colorized according to its extension (hardcoded for the moment)
-function colorize(name) {
+function colorize(name, type) {
     // --colors non set?
     if (argv['colors'] === false) {
       return name;
     }
 
+    if (type === 'folder') {
+      return (' ' + name + ' ').bgBlue;
+    }
+
     // js[x] green
     if (name.match(/\.js[x]?$/)) {
-      name = name.green;
+      return name.green;
     }
 
     // json gray
     if (name.match(/\.json?$/)) {
-      name = name.gray;
+      return name.gray;
     }
 
     return name;
@@ -120,12 +124,13 @@ var willNeedSpace = false;
 
 var fileCallback = function(path, fileName, stat) {
     willNeedSpace = true;
-    fileName = colorize(fileName);
+    fileName = colorize(fileName, 'file');
     console.log(repeat('  ', currentDepth) + PREFIX_FILE + fileName);
 };
 
 var enterDirectoryCallback = function(path, folderName, stat) {
     willNeedSpace = true;
+    folderName = colorize(folderName, 'folder');
     console.log(repeat('  ', currentDepth) + PREFIX_FOLDER + folderName);
     currentDepth++;
 };
