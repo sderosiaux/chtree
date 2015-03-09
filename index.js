@@ -82,7 +82,6 @@ function walk(fromDir, fileCallback, enterDirectoryCallback, exitDirectoryCallba
     // according to their type (folder or file)
     for (var i = 0, l = filesInDir.length; i < l; i++) {
       var name = filesInDir[i];
-      if (isIgnored(name)) continue;
 
       var abspath = path.join(fromDir, name);
       var stat = fs.statSync(abspath);
@@ -90,7 +89,8 @@ function walk(fromDir, fileCallback, enterDirectoryCallback, exitDirectoryCallba
 
       if (stat.isDirectory()) {
         dirs.push(obj);
-      } else {
+      } else { 
+        if (isIgnored(name)) continue;
         files.push(obj);
       }
     }

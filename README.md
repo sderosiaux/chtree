@@ -23,17 +23,28 @@ It doesn't use walk-fs or other walking modules because in order to have a 'clea
             · rainbow.js
             · random.js
             · zebra.js
-    
-          - system
-            · supports-colors.js
-    
-          · colors.js
-          · extendStringPrototype.js
-          · index.js
-          · styles.js
+          ...
+
+    # ignore everything that does not begin with a digit
+    $ chtree --ignore ^[^0-9]
+    - .git
+      - objects
+        - 01
+
+        - 02
+          · 1600ab51609a802dc15d5180ccbf6fd701b8fe
+
+        - 03
+          · 3e16f7e94dd80c183295b4cd283e92398936b3
+
+        - 04
+          · 33d2cfbef7ed75a87341dd1dc11f437649134d
+        ...
+
 
 # Help
-    chtree --help
+    $ chtree --help
+    chtree [directory] [--no-colors] [--ignore regexp]
 
 # Todo
 - Add tests.
