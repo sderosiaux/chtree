@@ -37,5 +37,4 @@ It doesn't use walk-fs or other walking modules because in order to have a 'clea
 
 # Todo
 - Be able to install it with `npm -g`.
-- Publish it to npm.
 - Add tests.
