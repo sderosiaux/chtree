@@ -16,7 +16,7 @@ var DEFAULT_IGNORED_PATTERN = /^\./;
 // ----------------------------------------------------------------------------
 if (argv.help) {
   console.log('chtree [directory] [--no-colors] [--ignore regexp]');
-  return;
+  process.exit(0);
 }
 
 // ----------------------------------------------------------------------------
