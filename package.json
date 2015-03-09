@@ -1,6 +1,6 @@
 {
   "name": "chtree",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Walks through a directory and prints out a treeview of its content",
   "main": "index.js",
   "scripts": {

@@ -1,12 +1,12 @@
 # What is it ?
-Walks through a directory and prints out a treeview of its content.
+Walks through a directory and prints out a treeview of its content with colors.
 
 It doesn't use walk-fs or other walking modules because in order to have a 'clean' code I needed callbacks those libs did not provide (exit a folder).
 
 # How to
     $ npm install -g chtree
 
-    $ node index.js
+    $ chtree
     - node_modules
       - colors
         - examples
