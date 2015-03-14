@@ -91,10 +91,11 @@ function walk(fromDir, fileCallback, enterDirectoryCallback, exitDirectoryCallba
       var stat = fs.statSync(abspath);
       var obj = { path: abspath, name: name, stat: stat };
 
+      if (isIgnored(name)) continue;
+
       if (stat.isDirectory()) {
         dirs.push(obj);
-      } else { 
-        if (isIgnored(name)) continue;
+      } else {         
         files.push(obj);
       }
     }
